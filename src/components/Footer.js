@@ -19,22 +19,29 @@ function Footer() {
 					<form name='contact' method='post'>
 						<input type='hidden' value='contact' name='form-name' />
 						<input
+							type='text'
 							placeholder='Name'
 							name='name'
 							value={name}
 							onChange={(e) => setName(e.target.value)}
+							required
+							spellCheck={false}
 						/>
 						<input
+							type='email'
 							placeholder='Email'
 							value={email}
 							name='email'
 							onChange={(e) => setEmail(e.target.value)}
+							required
+							spellCheck={false}
 						/>
 						<textarea
 							placeholder='Message here'
 							value={message}
 							name='message'
 							onChange={(e) => setMessage(e.target.value)}
+							required
 						/>
 						<button type='submit'>Submit</button>
 					</form>
