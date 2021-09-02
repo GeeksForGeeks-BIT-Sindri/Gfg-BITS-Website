@@ -17,6 +17,7 @@ function Newsletter() {
 						type='email'
 						name='email'
 						spellCheck={false}
+						required
 					/>
 					<button type='submit'>
 						<FaArrowRight className='submit' size={20} />
